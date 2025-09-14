@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Inani — Portfolio</title>
+    <meta name="description" content="Rahul Inani — Full‑stack developer specializing in Python, Next.js, React, Node.js, and AI-driven applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='70' x='10' font-size='60'>R</text></svg>">
+</head>
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#home">RI</a>
+        <nav class="nav" id="nav">
+            <a href="#home" class="nav__link active">Home</a>
+            <a href="#about" class="nav__link">About</a>
+            <a href="#skills" class="nav__link">Skills</a>
+            <a href="#experience" class="nav__link">Experience</a>
+            <a href="#projects" class="nav__link">Projects</a>
+            <a href="#education" class="nav__link">Education</a>
+            <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <button id="themeToggle" class="btn btn--icon" aria-label="Toggle theme">
+                <span class="icon">☀️</span>
+            </button>
+            <button id="menuToggle" class="btn btn--icon mobile-only" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section hero">
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <p class="eyebrow">Full‑Stack Developer • AI Enthusiast</p>
+                    <h1 class="headline">Hi, I'm <span class="accent">Rahul Inani</span>.</h1>
+                    <p class="subtitle">I build scalable web apps with delightful UX, real‑time systems, and AI‑powered experiences.</p>
+                    <div class="hero__cta">
+                        <a class="btn btn--primary" href="#projects">View Projects</a>
+                        <a class="btn btn--ghost" href="#contact">Contact Me</a>
+                    </div>
+                    <ul class="hero__meta">
+                        <li>Delhi, India</li>
+                        <li><a href="mailto:inanirahul311@gmail.com">inanirahul311@gmail.com</a></li>
+                        <li><a href="tel:+917300190626">+91 7300190626</a></li>
+                        <li><a href="https://www.linkedin.com/in/rahul-inani-725199258" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                        <li><a href="#" id="downloadCV">Download CV</a></li>
+                    </ul>
+                </div>
+                <div class="hero__figure">
+                    <div class="orbit">
+                        <div class="planet"></div>
+                        <div class="satellite"></div>
+                    </div>
+                    <img class="avatar" alt="Rahul Inani" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4">
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container grid two-col">
+                <div>
+                    <h2>About</h2>
+                    <p>Results‑driven full‑stack developer specializing in Python, Next.js, React, Node.js, and AI‑driven applications. I love crafting performant experiences, integrating real‑time systems, and optimizing backend performance.</p>
+                    <p>Strong problem‑solving skills with 600+ algorithmic challenges. Passionate about leveraging AI, cloud computing, and automation to build intelligent, user‑centric solutions.</p>
+                </div>
+                <ul class="badges">
+                    <li class="badge-item" data-tech="openai">
+                        <span class="tech-icon">🤖</span>
+                        <span class="tech-name">OpenAI APIs</span>
+                    </li>
+                    <li class="badge-item" data-tech="tensorflow">
+                        <span class="tech-icon">🧠</span>
+                        <span class="tech-name">TensorFlow</span>
+                    </li>
+                    <li class="badge-item" data-tech="numpy">
+                        <span class="tech-icon">🔢</span>
+                        <span class="tech-name">NumPy</span>
+                    </li>
+                    <li class="badge-item" data-tech="pandas">
+                        <span class="tech-icon">🐼</span>
+                        <span class="tech-name">Pandas</span>
+                    </li>
+                    <li class="badge-item" data-tech="aws">
+                        <span class="tech-icon">☁️</span>
+                        <span class="tech-name">AWS S3</span>
+                    </li>
+                    <li class="badge-item" data-tech="github">
+                        <span class="tech-icon">🐙</span>
+                        <span class="tech-name">GitHub</span>
+                    </li>
+                    <li class="badge-item" data-tech="postman">
+                        <span class="tech-icon">📮</span>
+                        <span class="tech-name">Postman</span>
+                    </li>
+                    <li class="badge-item" data-tech="vscode">
+                        <span class="tech-icon">💻</span>
+                        <span class="tech-name">VS Code</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="section alt">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill">
+                        <h3>Programming Languages</h3>
+                        <p>C++, JavaScript (ES6+), Python, Java, C</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Front‑End</h3>
+                        <p>React, Next.js, React Native, TypeScript, D3.js</p>
+                    </div>
+                    <div class="skill">
+                        <h3>Back‑End</h3>
+                        <p>Node.js, Express.js, RESTful APIs, Database Design</p>
+                    </div>
+                    <div class="skill">
+                        <h3>AI & Data</h3>
+                        <p>OpenAI, TensorFlow, NumPy, Pandas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <article class="card reveal">
+                        <header class="card__head">
+                            <h3>Software Developer</h3>
+                            <span class="muted">2023 – present · Freelance & Open Source</span>
+                        </header>
+                        <ul class="card__list">
+                            <li>Built and maintained multiple full‑stack projects with Next.js and Node.js, improving performance by 40% through optimized DB queries.</li>
+                            <li>Contributed to open‑source, refactoring core logic to enhance efficiency by 30%.</li>
+                            <li>Integrated microservices to improve system scalability and reliability.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section alt">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-card__media flowpay-logo">
+                            <div class="flowpay-svg-logo">
+                                <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Background circle -->
+                                    <circle cx="100" cy="50" r="45" fill="white" stroke="none"/>
+                                    
+                                    <!-- F letter (curved, flowing) -->
+                                    <path d="M 75 30 Q 80 25 85 30 L 85 40 Q 80 35 75 40 Z" fill="url(#fGradient)" stroke="none"/>
+                                    <rect x="70" y="30" width="15" height="5" fill="url(#fGradient)"/>
+                                    <rect x="70" y="45" width="10" height="5" fill="url(#fGradient)"/>
+                                    
+                                    <!-- P letter -->
+                                    <rect x="90" y="30" width="8" height="20" fill="#2d7d7d"/>
+                                    <rect x="90" y="30" width="15" height="8" fill="#2d7d7d"/>
+                                    <rect x="100" y="35" width="5" height="8" fill="#2d7d7d"/>
+                                    
+                                    <!-- Upward arrow -->
+                                    <path d="M 75 55 L 95 35 L 90 35 L 90 30 L 100 30 L 100 35 L 95 35 L 75 55 Z" fill="url(#arrowGradient)" stroke="none"/>
+                                    
+                                    <!-- Dollar sign -->
+                                    <circle cx="70" cy="25" r="3" fill="#00ff88"/>
+                                    <text x="70" y="28" text-anchor="middle" font-family="Arial, sans-serif" font-size="4" font-weight="bold" fill="white">$</text>
+                                    
+                                    <!-- Gradients -->
+                                    <defs>
+                                        <linearGradient id="fGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+                                            <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+                                        </linearGradient>
+                                        <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+                                            <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                
+                                <!-- Text below logo -->
+                                <div class="flowpay-text">
+                                    <h4>FlowPay</h4>
+                                    <p>–Simplifying Transactions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3>FlowPay — Simplifying Transactions</h3>
+                            <p>Minimized number of transactions while maintaining balances with Max Heap priority queue and Greedy algorithms. D3 graphs illustrated optimized cash transactions.</p>
+                            <p class="muted">Max Heaps, Algorithms, Data Structures, Graphs</p>
+                        </div>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-card__media linkwink-logo">
+                            <div class="linkwink-svg-logo">
+                                <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Background circle -->
+                                    <circle cx="100" cy="60" r="50" fill="none" stroke="#90EE90" stroke-width="8"/>
+                                    
+                                    <!-- Chain link icon -->
+                                    <g transform="translate(60, 40)" class="chain-link">
+                                        <!-- First link -->
+                                        <ellipse cx="0" cy="0" rx="12" ry="8" fill="white" stroke="none"/>
+                                        <ellipse cx="0" cy="0" rx="8" ry="6" fill="none" stroke="#1a5f4a" stroke-width="2"/>
+                                        
+                                        <!-- Second link -->
+                                        <ellipse cx="20" cy="0" rx="12" ry="8" fill="white" stroke="none"/>
+                                        <ellipse cx="20" cy="0" rx="8" ry="6" fill="none" stroke="#1a5f4a" stroke-width="2"/>
+                                        
+                                        <!-- Connection between links -->
+                                        <rect x="8" y="-2" width="4" height="4" fill="white"/>
+                                    </g>
+                                    
+                                    <!-- Document icon -->
+                                    <g transform="translate(100, 40)">
+                                        <!-- Document body -->
+                                        <rect x="0" y="0" width="24" height="32" fill="white" stroke="none" rx="2"/>
+                                        
+                                        <!-- Folded corner -->
+                                        <path d="M 20 0 L 24 4 L 20 4 Z" fill="#e5e7eb" stroke="none"/>
+                                        
+                                        <!-- Document lines -->
+                                        <rect x="4" y="8" width="12" height="1" fill="#1a5f4a"/>
+                                        <rect x="4" y="12" width="16" height="1" fill="#1a5f4a"/>
+                                        <rect x="4" y="16" width="14" height="1" fill="#1a5f4a"/>
+                                        
+                                        <!-- Winking eye -->
+                                        <g transform="translate(12, 20)" class="winking-eye">
+                                            <!-- Eye outline -->
+                                            <ellipse cx="0" cy="0" rx="6" ry="4" fill="white" stroke="#1e40af" stroke-width="1"/>
+                                            <!-- Iris -->
+                                            <circle cx="0" cy="0" r="3" fill="#3b82f6"/>
+                                            <!-- Pupil -->
+                                            <circle cx="0" cy="0" r="1.5" fill="#1e40af"/>
+                                            <!-- Winking eyelid -->
+                                            <path d="M -4 -2 Q 0 -4 4 -2" stroke="#1e40af" stroke-width="2" fill="none"/>
+                                        </g>
+                                    </g>
+                                    
+                                    <!-- PDF badge -->
+                                    <rect x="85" y="50" width="20" height="12" fill="#8b5cf6" rx="2"/>
+                                    <text x="95" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="white">PDF</text>
+                                    
+                                    <!-- Brand text -->
+                                    <text x="100" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">LinkWink</text>
+                                    <text x="100" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6b7280">– Centralized PDF Generator</text>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3>LinkWink — Centralized PDF Generator</h3>
+                            <p>Automated compilation of professional details into a shareable document for job applications. Responsive UI with dynamic PDFKit templates.</p>
+                            <p class="muted">HTML5, CSS3, JavaScript, PDFKit, Git</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <article class="card reveal">
+                    <header class="card__head">
+                        <h3>Maharaja Agrasen Institute Of Technology</h3>
+                        <span class="muted">Bachelor of Technology in IT · 2022 – 2026</span>
+                    </header>
+                    <ul class="card__list">
+                        <li>GPA: 7.70</li>
+                        <li>Coursework: Data Structures, Algorithms, DBMS, Web Development</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="certs" class="section alt">
+            <div class="container">
+                <h2>Certifications</h2>
+                <ul class="tick-list">
+                    <li>Mastering Data Structures & Algorithms — CodeHelp (2023)</li>
+                    <li>HTML5 & CSS3 Certification — GreatLearning (2023)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="extras" class="section">
+            <div class="container grid two-col">
+                <div>
+                    <h2>Activities</h2>
+                    <ul class="tick-list">
+                        <li>National Service Scheme (NSS) active member since 2022</li>
+                        <li>Community welfare events & tech volunteering</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Competitive Programming</h2>
+                    <p>Regular participation in coding contests and hackathons.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contactForm" class="contact-form" netlify>
+                    <div class="row">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email" required>
+                        </label>
+                    </div>
+                    <label>
+                        <span>Message</span>
+                        <textarea name="message" rows="5" required></textarea>
+                    </label>
+                    <button class="btn btn--primary" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <p>© <span id="year"></span> Rahul Inani</p>
+            <div class="links">
+                <a href="mailto:inanirahul311@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/rahul-inani-725199258" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
